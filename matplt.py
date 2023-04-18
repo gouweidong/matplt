@@ -64,8 +64,8 @@ image01_Lab_a=[image01_color_Lab[i+18][1] for i in range(0,6)]
 image01_Lab_b=[image01_color_Lab[i+18][2] for i in range(0,6)]
 
 fig=plt.figure(figsize=(10,8),dpi=80)
-x=[i for i in range(-30,30)]
-y=[i for i in range(-30,30)]
+x=[i for i in range(-20,20)]
+y=[i for i in range(-20,20)]
 plt.xlim(-20, 20)
 plt.ylim(-20, 20)
 plt.xticks(x[::2])
@@ -74,7 +74,8 @@ plt.xlabel("a")
 plt.ylabel("b")
 plt.title("image1_ab")
 
-plt.scatter(0,0,s=20)
+plt.scatter(0,0,s=30)
+plt.annotate("{}.({})".format("image1_ab", (0,0)), xy=(0,0),xytext=(- 1.5,  0.5))
 plt.grid(alpha=0.4)
 size=[20*(i+1) for i in range(0,6)]
 for i in range(0,6):
@@ -89,8 +90,8 @@ image02_Lab_a=[image02_color_Lab[i+18][1] for i in range(0,6)]
 image02_Lab_b=[image02_color_Lab[i+18][2] for i in range(0,6)]
 
 fig=plt.figure(figsize=(10,8),dpi=80)
-x=[i for i in range(-30,30)]
-y=[i for i in range(-30,30)]
+x=[i for i in range(-20,20)]
+y=[i for i in range(-20,20)]
 plt.xticks(x[::2])
 plt.yticks(y[::2])
 plt.xlim(-20, 20)
@@ -113,8 +114,8 @@ image03_Lab_a=[image03_color_Lab[i+18][1] for i in range(0,6)]
 image03_Lab_b=[image03_color_Lab[i+18][2] for i in range(0,6)]
 
 fig=plt.figure(figsize=(10,8),dpi=80)
-x=[i for i in range(-30,30)]
-y=[i for i in range(-30,30)]
+x=[i for i in range(-20,20)]
+y=[i for i in range(-20,20)]
 plt.xticks(x[::2])
 plt.yticks(y[::2])
 plt.xlim(-20, 20)
