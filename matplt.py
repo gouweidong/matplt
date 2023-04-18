@@ -74,6 +74,7 @@ plt.xlabel("a")
 plt.ylabel("b")
 plt.title("image1_ab")
 
+plt.scatter(0,0,s=20)
 plt.grid(alpha=0.4)
 size=[20*(i+1) for i in range(0,6)]
 for i in range(0,6):
@@ -100,6 +101,7 @@ plt.title("image2_ab")
 
 plt.grid(alpha=0.4)
 size=[20*(i+1) for i in range(0,6)]
+plt.scatter(0,0,s=20)
 for i in range(0,6):
     plt.scatter(image02_Lab_a[i],image02_Lab_b[i],s=size[i])
     plt.annotate("{}.({})".format(i+1,image02_color_Lab_text[i+18]), xy = (image02_Lab_a[i], image02_Lab_b[i]), xytext = (image02_Lab_a[i]-1.5, image02_Lab_b[i]+0.5))
@@ -121,6 +123,7 @@ plt.xlabel("a")
 plt.ylabel("b")
 plt.title("image3_ab")
 
+plt.scatter(0,0,s=20)
 plt.grid(alpha=0.4)
 size=[20*(i+1) for i in range(0,6)]
 for i in range(0,6):
